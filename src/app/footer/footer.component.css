@@ -1,0 +1,14 @@
+.footer{
+    background-color: orange;
+    color: #fff
+}
+
+.links_uteis:link{
+    text-decoration:none;
+    color:#fff !important;
+}
+
+.links_uteis:link:hover{
+    text-decoration:none;
+    color:black;
+}

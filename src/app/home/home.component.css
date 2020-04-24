@@ -1,0 +1,20 @@
+.cozinheiros{
+    max-height: 300px;
+}
+
+
+.card-img-top{
+    width: auto;
+    height: 210px;
+}
+
+.btn-receitas{
+    color: #ffff;
+    background-color: orange;
+}
+
+.btn-receitas:hover{
+    color:orange;
+    background-color:#fff;
+    border-color: orange;
+}

@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+
+/* Header */
+
+
+
+.navbar-toggler{
+    border-color: orange;
+}
+
+.navbar-toggler-icon{
+    border-color: orange !important;
+
+    ;
+}
+
+
+ul li a:hover{
+    color: black !important;
+    border-color: orange !important;
+}
+
+.container{
+    max-width: 90%;
+}
+
+/* header{
+    border-bottom: 1px solid #414141;
+
+} */
+
+.logo{
+    width: 120px;
+    height: 50px;
+}
+
+.navbar{
+    background-color:#fff;
+    font-size: 13px;
+}
+
+#iPesquisa{
+    font-size: 13px;
+    width: auto;
+    max-width: 250px;
+    margin: 0 20px 0 0;
+}
+
+.lupa{
+    width: 35px;
+    height: 35px;
+    border-color: orange;
+     }
+
+
+/* .buscar:hover{
+    background-color: #5C5099;
+
+} 
+
+ .buscar{
+    background-color: #e9316e;
+}  */ */
+
+/* .cadastrar{
+    background-color: #e9316e;
+    padding: 7px !important;
+    border-radius: 5px !important;
+    margin:0 0 0 10px;
+} */
+
+/* #btnCadastro:hover{
+    background-color: #5C5099 !important;
+    color: #fff !important;
+} */
+
+
+
+.nav-link:hover{
+    text-decoration:none;
+    color: black !important;
+}
+
+.nav-link{
+    color: orange !important;
+    padding-right: 10px !important;
+    border-color: orange;
+}
+
+
+
+.dropdown-item{
+    color: orange !important;
+}
+
+.devs h1{
+   text-align: center;
+
+}
+
+.container h1 {
+    text-align: center;
+    margin: 30px auto 15px auto;
+    color: white;
+
+}
+/* .container p{
+    text-align: center;
+    color:white;
+    border: 2px solid orange;
+} */
+
+
+
+/* media query */
+
+@media (max-width: 1024px) {
+    #iPesquisa{
+        width: 200px;
+        font-size: 11px;
+    }
+    #btnLupa{
+        max-width: 20%;
+    }
+    .cadastrar{
+       font-size: 13px;
+    }
+    ul > li > a{
+       font-size: 13px;
+       padding-right: 5px !important;
+        
+    }
+
+    #hamburguer{
+        display:none;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    
+    #footer{
+
+        font-size: 0.7em;
+    
+    }
+
+    #h5Footer{
+
+        margin-bottom: 20px;
+    }
+
+    .txtFooter{
+        
+        display: inline;
+
+    }
+
+    .footer-copyright{
+
+        background-color: #000205 ;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    
+    #iPesquisa{
+        width: 75%;
+        margin: 0 5px 0 0;
+    }
+    #btnLupa{
+        max-width: 5%;
+    }
+  
+    #menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    #hamburguer{
+        order: 2;
+    }
+
+    #pesquisa{
+        order: 3;
+        width:100vw;
+
+    }
+    
+    .cadastrar{
+
+        max-width: 350px;
+        margin: 0;
+        flex: auto;
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,56 @@
+<div class="container d-flex">
+    <div class="row">
+        <div class="col-4">
+            <div class="justify-content-center">
+                <img class="img-fluid cozinheiro" src="../../assets/img/cozinheiros.jpg" alt="cozinheiro">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-8">
+        <div id="input" class="formulario mt-3 ml-3">
+            <h1>Fale Conosco</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" class="form-control" id="nomeCompleto" aria-describedby="emailHelp"
+                        placeholder="Insira o seu nome">
+                    <div style="visibility: hidden;" class="alert alert-danger alertColor" role="alert-nome"
+                        id="alert-nome">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="emailValid">Endereço de email</label>
+                    <input type="email" class="form-control" id="emailValid" aria-describedby="emailHelp"
+                        placeholder="Insira o seu e-mail">
+                    <div style="visibility: hidden;" class="alert alert-danger alertColor" role="alert-email"
+                        id="alert-email">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="telValid">Telefone</label>
+                    <input type="text" class="form-control" id="telValid"
+                        placeholder="(xx) xxxx-xxxx ou (xx) xxxx-xxxxx"
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="11">
+                    <div style="visibility: hidden;" class="alert alert-danger alertColor" role="alert-tel"
+                        id="alert-tel">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textArea">Descreva sua dúvida (o mais detalhado possivel)</label>
+                    <textarea class="form-control" id="textArea" rows="5"></textarea>
+                    <div style="visibility: hidden;" class="alert alert-danger alertColor" role="alert-textArea"
+                        id="alert-textArea">
+                    </div>
+                </div>
+                <button type="button" class="btn btnEnviar" id="btnEnviar">Enviar</button>
+                <br />
+                <br />
+            </form>
+        </div>
+    </div>
+</div>

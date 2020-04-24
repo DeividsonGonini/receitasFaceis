@@ -1,0 +1,22 @@
+.cozinheiro{
+   max-width: 340px;
+   max-height: 830px
+}
+
+.formulario{
+    font-size: 1.5em;
+        color: orange;
+}
+
+.btnEnviar{
+    background-color: orange;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.btnEnviar:hover{
+    background-color:#fff;
+    color: orange;
+    border-color: orange;
+
+}
