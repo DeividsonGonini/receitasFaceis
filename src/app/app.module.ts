@@ -8,6 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReceitasComponent } from './receitas/receitas.component';
+import { EditarReceitaComponent } from './receitas/editar-receita/editar-receita.component';
+import { DetalharReceitaComponent } from './receitas/detalhar-receita/detalhar-receita.component';
+import { CadastrarReceitaComponent } from './receitas/cadastrar-receita/cadastrar-receita.component';
+import { DeletarReceitaComponent } from './receitas/deletar-receita/deletar-receita.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ReceitasComponent,
+    EditarReceitaComponent,
+    DetalharReceitaComponent,
+    CadastrarReceitaComponent,
+    DeletarReceitaComponent
   ],
   imports: [
     BrowserModule,

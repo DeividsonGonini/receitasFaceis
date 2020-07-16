@@ -1,0 +1,12 @@
+import { Permissao } from './Permissao';
+
+export class Usuario {
+    public id: number;
+    public nome: string;
+    public email: string;
+    public senha: string;
+    public telefone: string;
+    public cpf: string;
+    public token: string;
+    public permissao: Permissao;
+}
