@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReceitaService } from '../service/receita.service';
+import { Receita } from '../Model/Receita';
 
 @Component({
   selector: 'app-receitas',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReceitasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private receitaService: ReceitaService) { }
+
+  listaReceitas: Receita[];
 
   ngOnInit(): void {
+    this.findAllReceita;
+    window.scroll(0, 0);
+  }
+
+
+  findAllReceita() {
+    this.receitaService.getAllReceitas().subscribe((resp: Receita[]) => {
+      this.listaReceitas = resp;
+    })
   }
 
 }

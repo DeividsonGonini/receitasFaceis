@@ -13,6 +13,8 @@ import { EditarReceitaComponent } from './receitas/editar-receita/editar-receita
 import { DetalharReceitaComponent } from './receitas/detalhar-receita/detalhar-receita.component';
 import { CadastrarReceitaComponent } from './receitas/cadastrar-receita/cadastrar-receita.component';
 import { DeletarReceitaComponent } from './receitas/deletar-receita/deletar-receita.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DeletarReceitaComponent } from './receitas/deletar-receita/deletar-rece
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

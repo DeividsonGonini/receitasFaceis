@@ -1,41 +1,66 @@
 <!-- Card com as receitas -->
-<!--
-  <section class="d-flex justify-content-around flex-wrap my-3 bordertest">
+<h1 class=" my-3 text-center">Todas as Receitas</h1>
 
-    <div class="card text-center my-4 mx-3 modoNoturno" *ngFor="let produto of listaProdutos"
-      [class.caixasNoturno]="modoNoturno" [class.caixas]="!modoNoturno">
-      <div class="card-body">
-        <a [routerLink]="['/produtos/detalhar', produto.codigo]">
-          <div class="produtonome">
-            <h4 class="d-flex justify-content-center w-auto">{{produto.nome}}</h4>
-          </div>
-          <hr>
-          <div class="divimg d-flex w-100 justify-content-center">
-            <img class="img-fluid img justify-content-center" src="{{produto.urlImg}}" alt="{{produto.descricao}}">
-          </div>
-          <hr>
-        </a>
-        <div>
-          <span>Preço: {{produto.preco | currency:"BRL" }}</span>
+<section class="d-flex justify-content-around flex-wrap my-3 bordertest">
+  <div class="card text-center my-4 mx-3 modoNoturno" *ngFor="let receita of listaReceitas">
+    <div class="card-body">
+      <a [routerLink]="['/receita/detalhar', receita.codigo]">
+        <div class="produtonome">
+          <h4 class="d-flex justify-content-center w-auto">{{receita.nome}}</h4>
         </div>
         <hr>
-        <div>
-          <span>Usuario: {{produto.idUsuario.nome}}</span>
+        <div class="divimg d-flex w-100 justify-content-center">
+          <img class="img-fluid img justify-content-center" src="{{receita.urlImg}}" alt="{{receita.nome}}">
         </div>
         <hr>
-        <!-- <div>
+      </a>
+      <div>
+        <span>Categoria: {{receita.idCategotia.nome}}</span>
+      </div>
+      <hr>
+      <div>
+        <span>Usuario: {{receita.idUsuario.nome}}</span>
+      </div>
+      <hr>
+      <!-- <div>
                     <span>Publicado: {{produto.date | date: 'dd/MM/yyyy'}}
                         ás {{produto.date | date: 'HH:mm'}} </span>
                 </div> 
-                <hr> 
-
-                FECHAR COMENTARIO DO PUBLICADO  E A DATA
-
-        <button class="btn verMais" [routerLink]="['/produtos/detalhar', produto.codigo]">Saiba mais</button>
-      </div>
+                <hr> -->
+      <button class="btn verMais" [routerLink]="['/receitas/detalhar', receita.id]">Saiba mais</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  -->
+
+teste
+<section class="d-flex justify-content-around flex-wrap my-3 bordertest">
+  <div class="card text-center my-4 mx-3 modoNoturno">
+    <div class="card-body">
+      <a>
+        <div class="produtonome">
+          <h4 class="d-flex justify-content-center w-auto">Escondidinho de Carne Seca</h4>
+        </div>
+      </a>
+      <div>
+        <span>Categoria: Comida</span>
+      </div>
+      <hr>
+      <div>
+        <span>Usuario: Deividson</span>
+      </div>
+      <hr>
+      <!-- <div>
+                    <span>Publicado: {{produto.date | date: 'dd/MM/yyyy'}}
+                        ás {{produto.date | date: 'HH:mm'}} </span>
+                </div> 
+                <hr> -->
+    </div>
+    <button class="btn verMais">Saiba mais</button>
+
+  </div>
+</section>
+
+
 
 <!-- /Card com as receitas -->

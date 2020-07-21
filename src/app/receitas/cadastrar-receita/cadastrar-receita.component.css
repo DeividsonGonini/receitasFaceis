@@ -1,0 +1,14 @@
+/* .imgCadastrar{
+    background: url(../../../assets/img/chefe-com-receita.jpg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    margin: -1px 0 !important;
+    background-size: cover;
+} */
+
+
+.containerCadastrar{
+    max-width: 1024px;
+    max-width: 500px;
+ }
