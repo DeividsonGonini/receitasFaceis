@@ -1,46 +1,52 @@
-<nav class=" navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="#">
-        <img class="logo" src="../../assets/img/logo.png" alt="logo Receita Fácil">
-    </a>
-    <!-- Menu Hamburguer!NAO MEXAM -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Fim Hamburguer -->
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" routerLink='/home'>Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink='/contact'>Contato</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Receitas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Comidas</a>
-                    <a class="dropdown-item" href="#">Salgados</a>
-                    <a class="dropdown-item" href="#">Sobremesas</a>
-                    <a class="dropdown-item" href="#">Caldos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Enviar Receita</a>
-                    <a class="dropdown-item" href="#">Pedir Receita</a>
+<div class="container">
 
-                </div>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Desativado</a>
+    <!-- Teste -->
+    <nav class=" navbar navbar-expand-lg ">
+        <a class="navbar-brand">
+            <img class="logo" src="../../assets/img/logo.png" alt="logo Receita Fácil">
+        </a>
+        <!-- Menu Hamburguer!NAO MEXAM -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Fim Hamburguer -->
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/home">Home<span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact">Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Receitas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">Comidas</a>
+                        <a class="dropdown-item">Salgados</a>
+                        <a class="dropdown-item">Sobremesas</a>
+                        <a class="dropdown-item">Caldos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Enviar Receita</a>
+                        <a class="dropdown-item">Pedir Receita</a>
+
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link disabled">Desativado</a>
             </li> -->
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Procurar Receita" aria-label="Pesquisar">
-            <button class="btn my-2 my-sm-0" type="submit">
-                <img class="lupa" src="../../assets/img/lupa.jpg" alt="">
-            </button>
-        </form>
-    </div>
-</nav>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Procurar Receita" aria-label="Pesquisar">
+                <button class="btn my-2 my-sm-0" type="submit">
+                    <img class="lupa" src="../../assets/img/lupa.jpg" alt="">
+                </button>
+            </form>
+        </div>
+    </nav>
+
+
+</div>

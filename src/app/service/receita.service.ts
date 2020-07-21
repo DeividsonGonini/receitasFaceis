@@ -27,7 +27,7 @@ export class ReceitaService {
   }
 
   //Receita Detalhada
-  getById(id: number) {
+  getByIdReceita(id: number) {
     return this.http.get(this.urlApi + `/receitas/${id}`);
   }
 
