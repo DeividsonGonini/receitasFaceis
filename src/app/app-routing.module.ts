@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'receitas/detalhar/:id', component: DetalharReceitaComponent },
   { path: 'receitas/editar/:id', component: EditarReceitaComponent },
   { path: 'receitas/deletar/:id', component: DeletarReceitaComponent },
-  { path: 'cadastrar-receita', component: CadastrarReceitaComponent },
+  { path: 'receitas/cadastrar', component: CadastrarReceitaComponent },
 
 
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReceitaService } from 'src/app/service/receita.service';
 import { Receita } from 'src/app/Model/Receita';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastrar-receita',
@@ -9,7 +10,7 @@ import { Receita } from 'src/app/Model/Receita';
 })
 export class CadastrarReceitaComponent implements OnInit {
 
-  constructor(private receitaService: ReceitaService) { }
+  constructor(private receitaService: ReceitaService, private router: Router) { }
 
   receita: Receita = new Receita;
 
@@ -23,7 +24,8 @@ export class CadastrarReceitaComponent implements OnInit {
     this.receitaService.postReceita(this.receita).subscribe((resp: Receita) => {
       this.receita = resp;
       this.receita.ativo = true;
-      this.receita.idUsuario.id = 1;
+      // this.receita.idUsuario.id = 1;
+      this.router.navigate(['/receitas']);
     })
   }
 

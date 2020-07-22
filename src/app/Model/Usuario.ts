@@ -8,5 +8,5 @@ export class Usuario {
     public telefone: string;
     public cpf: string;
     public token: string;
-    public permissao: Permissao;
+    public idPermissao: Permissao;
 }

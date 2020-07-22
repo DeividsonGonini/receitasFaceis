@@ -18,12 +18,12 @@ export class ReceitaService {
 
   //Cadastrar Receita
   postReceita(receita: Receita) {
-    return this.http.post(this.urlApi + '/cadastrar-receita', receita);
+    return this.http.post(this.urlApi + '/receitas', receita);
   }
 
   //Editar Receita
   putReceita(receita: Receita) {
-    return this.http.put(this.urlApi + 'receitas', receita);
+    return this.http.put(this.urlApi + '/receitas', receita);
   }
 
   //Receita Detalhada

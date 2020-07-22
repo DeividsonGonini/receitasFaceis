@@ -9,12 +9,13 @@ import { Receita } from '../Model/Receita';
 })
 export class ReceitasComponent implements OnInit {
 
+  listaReceitas: Receita[];
   constructor(private receitaService: ReceitaService) { }
 
-  listaReceitas: Receita[];
+
 
   ngOnInit(): void {
-    this.findAllReceita;
+    this.findAllReceita();
     window.scroll(0, 0);
   }
 
