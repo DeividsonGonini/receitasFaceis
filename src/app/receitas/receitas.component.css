@@ -56,7 +56,8 @@
     border: none;
     box-shadow: 0px 0px 8px 3px #ccc;
     transition: box-shadow 0.3s;
-    background-color: #f1f0f0;
+
+    /* background-color: #f1f0f0; */
     transition: transform .35s ease;
     border-radius: 15px;
   }
@@ -83,25 +84,19 @@
   }
   
   .verMais {
-    background-color: #05a4c4;
     padding: 8px 35px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    color: #fff;
     transition: color .25s ease, background .25s ease;
   }
   
-  span {
+  /* span {
     font-size: 18px;
     font-weight: 600;
-  }
+  } */
   
-  .verMais:hover {
-    background-color: #ed3263;
-  }
   
   .verMaisNoturno {
-    background-color: #5C5099;
     padding: 8px 35px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -109,9 +104,6 @@
     transition: color .25s ease, background .25s ease;
   }
   
-  .verMaisNoturno:hover {
-    background-color: #2b215e;
-  }
   
   .c-filter-bar {
     background-color: #232323;
@@ -337,4 +329,4 @@
       top: 200px;
     }
   }
- 
+  

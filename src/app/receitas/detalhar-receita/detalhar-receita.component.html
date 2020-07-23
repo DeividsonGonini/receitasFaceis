@@ -1,1 +1,77 @@
-<p>detalhar-receita works!</p>
+<div class="container">
+
+    <h1>{{receita.nome}}</h1>
+    <div class="row my-3">
+        <!--Receita -->
+        <div class="col-md-9">
+
+            <!-- Imagens Receita -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Video -->
+                    <!-- <div class="carousel-item active">
+                        <iframe max-width="966" max-height="543" src="https://www.youtube.com/embed/48liYhR8U2Q"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div> -->
+                    <!-- /Video -->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{receita.img1}}" alt="Primeiro Slide" id="img1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{receita.img2}}" alt="Segundo Slide" id="img2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{receita.img3}}" alt="Terceiro Slide" id="img3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <!-- /Midia -->
+
+
+
+            <!-- Ingredientes -->
+            <div class="ingredientes my-3 px-2 py-2 border border-warning rounded">
+                <h4>Ingredientes:</h4>
+                <p>{{receita.ingredientes}}</p>
+            </div>
+            <!-- /Ingredientes -->
+
+            <!-- Modo de Preparo -->
+            <div class="my-3 px-2 py-2 border border-warning rounded">
+                <h4>Modo de Preparo:</h4>
+                <p>{{receita.modoPreparo}}</p>
+            </div>
+            <!-- Modo de Preparo -->
+
+            <button class="btn verMais btn-outline-warning" (click)="voltar()">Voltar</button>
+
+        </div>
+        <!--/Receita -->
+
+
+
+
+        <!-- Indicação receitas recentes -->
+        <div class="col-md-3">
+
+        </div>
+        <!-- /Indicação receitas recentes -->
+
+    </div>
+</div>
